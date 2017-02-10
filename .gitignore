@@ -1,6 +1,7 @@
 artemis/*.png
 figures/*
 data/*
+references/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
