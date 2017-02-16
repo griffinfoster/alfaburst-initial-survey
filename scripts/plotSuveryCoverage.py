@@ -110,8 +110,9 @@ if __name__ == '__main__':
         gradCoord = 'G'
 
     if opts.sampling is not None: # plot the sampling function
+        sampIdx = np.argwhere(hpMask == 1)
+        print 'Unique pointings:', sampIdx.size
         if opts.gsm is not None:
-            sampIdx = np.argwhere(hpMask == 1)
             gsm[sampIdx] = np.max(gsm)
             hp.mollview(gsm, fig=fig.number, coord=coord, cmap=plt.get_cmap(opts.cmap), unit='MJy/sr', title='ALFABURST Sky Sampling')
         else: hp.mollview(hpMask, fig=fig.number, coord=coord, cmap=plt.get_cmap(opts.cmap), cbar=False, title='ALFABURST Sky Sampling')
