@@ -1,6 +1,8 @@
 artemis/*.png
 data/*
 references/*
+scriptsBak/*
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
